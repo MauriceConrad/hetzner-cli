@@ -1,0 +1,22 @@
+{
+  "name": "hetzner-cli",
+  "version": "0.0.1",
+  "description": "Hetzner services cli",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "hetzner": "src/main.js"
+  },
+  "keywords": [
+    "hetzner",
+    "cli"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "commander": "^8.2.0",
+    "console-table-printer": "^2.10.0",
+    "yaml": "^1.10.2"
+  }
+}
