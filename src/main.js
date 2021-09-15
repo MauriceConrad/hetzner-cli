@@ -1,3 +1,5 @@
+
+
 import { program } from 'commander'
 import YAML from 'yaml'
 import { printTable, Table } from 'console-table-printer'
@@ -7,7 +9,7 @@ import * as stringifier from './stringifier.js'
 import { spaceText, findMatchingRecords, getRecord, getZoneFromQuery, getAPIKey } from './util.js'
 
 
-program.version('0.0.1');
+//program.version('0.0.1');
 
 
 
