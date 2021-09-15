@@ -97,6 +97,9 @@ $ records --zone bluepic.de get :AAAA
 $ records --zone bluepic.de get www:AAAA
 
 # Find all records of any type
+$ records --zone bluepic.de get
+
+# This works even great to get all records of any type
 $ records --zone bluepic.de get :
 ```
 
