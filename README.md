@@ -2,6 +2,12 @@
 
 ### Usage
 
+#### Global Installation
+
+```bash
+$ npm install hetzner -g
+```
+
 On top level, the CLI needs the `--api-key` argument.
 
 ```bash
