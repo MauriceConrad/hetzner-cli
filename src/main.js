@@ -132,7 +132,8 @@ program.option('-k, --api-key <apiKey>', 'Provide API Key')
   const cmd = program.command('records');
   cmd.option('-z, --zone <string>', 'Zone query for the record command');
   const get = cmd.command('get [record]')
-    .action(async (record) => {
+  .option('-d, --detail', 'Show detailed records info')
+  .action(async (record) => {
       const client = new Hetzner(getAPIKey(program));
       const zone = await getZoneFromQuery(cmd.opts().zone, getAPIKey(program));
       if (zone) {
@@ -149,7 +150,8 @@ program.option('-k, --api-key <apiKey>', 'Provide API Key')
               { name: 'type', align: 'right' },
               { name: 'name', align: 'right' },
               { name: 'value', align: 'right', maxLen: 20 }
-            ]
+            ],
+            disabledColumns: get.opts().detail ? [] : ['id']
           });
           table.addRows(matching.map(({ id, type, name, value }) => ({ id, type, name, value })));
           table.printTable();

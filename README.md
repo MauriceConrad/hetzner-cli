@@ -86,6 +86,10 @@ Internally, Hetzner's records are related to unqiue ids as zones described above
 
 ### Find records
 
+|Argument  |Type   |Description       |Required|
+|----------|:------|:-----------------|-------:|
+|`--detail`|Boolean|Show id of records|      No|
+
 ```bash
 # Find all www records
 $ records --zone bluepic.de get www:
@@ -99,8 +103,11 @@ $ records --zone bluepic.de get www:AAAA
 # Find all records of any type
 $ records --zone bluepic.de get
 
-# This works even great to get all records of any type
+# This works even great to find all records of any type
 $ records --zone bluepic.de get :
+
+# Find all records of any type with their id
+$ records --zone bluepic.de get --detail
 ```
 
 ### Update record
