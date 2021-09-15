@@ -136,8 +136,9 @@ program.option('-k, --api-key <apiKey>', 'Provide API Key')
       const client = new Hetzner(getAPIKey(program));
       const zone = await getZoneFromQuery(cmd.opts().zone, getAPIKey(program));
       if (zone) {
-
         try {
+          if (!record) record = ":";
+
           const [ name, type ] = record.split(':');
           console.log(`\n🟡  Searching for records of with name "${ name }" and type ${ type }`);
           const result = await client.getAllRecords(zone.id);
