@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 
 import { program } from 'commander'
 import YAML from 'yaml'
@@ -9,7 +9,7 @@ import * as stringifier from './stringifier.js'
 import { spaceText, findMatchingRecords, getRecord, getZoneFromQuery, getAPIKey } from './util.js'
 
 
-//program.version('0.0.1');
+program.version('1.0.0');
 
 
 
