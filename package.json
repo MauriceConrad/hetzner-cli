@@ -4,7 +4,7 @@
   "description": "Hetzner services cli",
   "main": "src/main.js",
   "type": "module",
-  "scripts": {
+  "bin": {
     "hetzner": "src/main.js"
   },
   "keywords": [
