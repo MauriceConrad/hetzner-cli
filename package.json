@@ -1,6 +1,6 @@
 {
-  "name": "hetzner-cli",
-  "version": "0.0.1",
+  "name": "hetzner",
+  "version": "0.0.2",
   "description": "Hetzner services cli",
   "main": "src/main.js",
   "type": "module",

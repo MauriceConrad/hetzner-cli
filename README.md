@@ -8,6 +8,13 @@ On top level, the CLI needs the `--api-key` argument.
 $ hetzner --api-key XXX ...
 ```
 
+
+### Example with zones
+
+```bash
+$ hetzner --api-key XXX zones get bluepic.de
+```
+
 ## Zones
 
 ### Get zones
