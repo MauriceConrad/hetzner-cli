@@ -1,6 +1,6 @@
 {
   "name": "hetzner",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Hetzner services cli",
   "main": "src/main.js",
   "type": "module",
@@ -11,6 +11,10 @@
     "hetzner",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MauriceConrad/hetzner-cli.git"
+  },
   "author": "Maurice Conrad",
   "license": "ISC",
   "dependencies": {
